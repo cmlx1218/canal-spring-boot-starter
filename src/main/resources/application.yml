@@ -1,0 +1,21 @@
+server:
+  port: 10086
+
+
+spring:
+  application:
+    name: canal-springboot
+
+# 完成ip直连
+canal:
+  server: 101.132.138.75:11111
+  destination: example
+
+# 后续补充 多ip直连 kafka 和 zookeeper模式
+#canal:
+#  mode: kafka
+#  batch-size: 1
+#  timeout: 1
+#  server: 101.132.138.75:9092
+#  destination: canaltopic
+#  group-id: test-consumer-group
